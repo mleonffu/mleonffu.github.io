@@ -1,0 +1,78 @@
+body{
+
+	margin:0px;
+	background-image: "img/item/food/food1.png";
+	background-size: cover;
+	
+
+}
+
+
+.shop{
+	font-size: 21px;
+}
+.shop button{
+
+	width: 64px;
+	height: 32px;
+
+}
+footer{
+
+	background-color: pink;
+}
+.playerStats{
+	font-size: 24px;
+
+}
+.playerBar{
+
+	background-color: lightblue;
+}
+.pets{
+
+	background-color: lightgreen;
+	font-size: 21px;
+}
+
+.shapeCircle{
+
+
+	border-radius: 50%;
+
+}
+
+.peticon{
+
+	border-radius: 10%;
+	width:128px;
+	height:128px;
+
+
+}
+.petBorder{
+
+	background-color: white;
+	border-left:1px solid #EEEEEE;
+	border-right:1px solid #EEEEEE;
+	box-shadow: 10px 10px 5px gray;
+}
+.petLevel{
+
+	font-size: 32px;
+
+}
+.rotate90 {
+	
+    transform: rotate(90deg);
+    transform: rotate(330deg);
+    animation-duration: 4s;
+
+}
+.navBarStatIcons{
+
+	height: 32px;
+	width: 32px;
+
+
+}
