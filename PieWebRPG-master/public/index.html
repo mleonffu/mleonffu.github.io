@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>TBD Web RPG</title>
+		<title>Pie Web PRG</title>
 		<meta name = "viewport" content="width=device-width, initial-scale=1.0">
 		<link href = "css/bootstrap.min.css" rel = "stylesheet" type="text/css">
 		<link href = "css/styles.css" rel = "stylesheet" type="text/css">
@@ -213,8 +213,8 @@
 
 				</div>
 
-				<audio controls>
-					<source src="img/test.mp3" type="audio/mpeg">
+				<audio controls autoplay id="myTemmishop">
+					<source src="img/temmishop.mp3" type="audio/mpeg" id="myTemmishop" >
 					
 					<bdo dir="rtl" >Your browser does not support the audio tag.</bdo>
 				</audio>
@@ -305,5 +305,8 @@
 		<script src = "js/test.js"></script>
 		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src = "js/bootstrap.js"></script>
+		<script type="text/javascript">
+			var vid = document.getElementById("myTemmishop");
+			vid.loop = true;</script>
 	</body>
 <html>
