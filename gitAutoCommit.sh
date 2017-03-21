@@ -11,7 +11,7 @@ read commitMessage
 
 printf '%b' '\nIs this your message:\n' '\033[95m' "$commitMessage" '\n'
 read -n1 -p '(y/n)' messageConfirmation
-printf '\n'
+printf '\033[0m\n'
 
 if ( [[ "$messageConfirmation" = 'y' ]] );then
     git commit -m "$commitMessage"
