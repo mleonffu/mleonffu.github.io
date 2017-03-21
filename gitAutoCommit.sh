@@ -27,15 +27,16 @@ printf "Commit with this message?"
 printf "\n\033[95m$commitMessage\033[0m\n"
 
 read -n1 -p '(y/n)' messageConfirmation
+printf '\n'
 
 if ( [[ "$messageConfirmation" = 'y' ]] );then
     git commit -m "$commitMessage"
     git push
-    printf 'Success!?'
+    printf '\nSuccess!?'
 else
-    printf 'Conformation Failed, Exiting \n'   
+    printf '\nConformation Failed, Exiting'   
 fi
 
-printf '\033[93m Have a Nice Day! \033[0m \n'
+printf '\n\033[93m Have a Nice Day!\033[0m\n'
 
 exit 1
