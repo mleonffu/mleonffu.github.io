@@ -1,8 +1,7 @@
 #!/bin/bash
-
+#Github atuomation: Fetch, Pull, Add, Commit, and Push.
 git fetch
 git pull
-
 git add .
 
 printf 'Message to commit with: \n'
