@@ -8,7 +8,7 @@ git add .
 printf 'Message to commit with: \n'
 read commitMessage
 
-printf '\n\nAre you sure?\n\n'
+printf '\nAre you sure?\n\n'
 
 read -n1 -p '(y/n)' messageConfirmation
 printf '\n'
