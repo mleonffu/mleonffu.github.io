@@ -1,5 +1,6 @@
 #!/bin/bash
-
+#Github atuomation: Fetch, Pull, Add, Commit, and Push; with prompts.
+#By Michael Leonffu 2017
 function centerIt {
     lines=$(tput lines);cols=$(tput cols);tput cup $((lines/2)) $(((cols-${#1})/2))
 }

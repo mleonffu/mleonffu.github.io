@@ -1,5 +1,6 @@
 #!/bin/bash
 #Github atuomation: Fetch, Pull, Add, Commit, and Push.
+#By Michael Leonffu 2017
 git fetch
 git pull
 git add .
