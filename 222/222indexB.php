@@ -110,7 +110,7 @@ function display_table($artistUserName, $image_info_table, $dbname, $firstName, 
 			}
 			$domain = $_SERVER['SERVER_NAME'];
 			echo "<TD><img id='$id_name' src='http://$domain/$artistUserName/$thumb_name' onmouseover=" . '"' . "
-						showDetailedView('$div_id', '$firstName', '$lastName')" . '" />';
+						showDetailedView('$div_id', '$firstName', '$lastName', '/$artistUserName/$thumb_name')" . '" />';
 			echo "<div id = '$div_id'></div></TD>";
 			if ($count % 6 == 5)
 			{

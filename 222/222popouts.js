@@ -14,13 +14,13 @@ function hideDetailedView() {
     unpopped.id = popping;
 }
 
-function showDetailedView(currentDiv, firstname, lastname) {
+function showDetailedView(currentDiv, firstname, lastname, path) {
 	var popframe = document.getElementById(currentDiv);
     popping = popframe.id;
 	popframe.id = "popout";
-	popframe.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='http://" + window.location.hostname + 
-							"/aprilla/pic1.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>" + 
-							firstname + lastname + "<TR><TH align='left'>File Name: <TH align='left'>pic1.jpg<TR></TABLE> ";
+	popframe.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='http://" + window.location.hostname + path + 
+							"' width='250'><TH align='left'>Artist's Name: <TH align='left'>" + 
+							firstname + " " + lastname + "<TR><TH align='left'>File Name: <TH align='left'>pic1.jpg<TR></TABLE> ";
     var nameholder = "popout";
 	var unpopped = document.getElementById(nameholder);
     unpopped.onmouseout = hideDetailedView;
