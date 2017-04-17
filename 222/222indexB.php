@@ -58,10 +58,11 @@ $row = mysql_fetch_row($result_artist);
 $artistID = $row[0];
 $artistUserName = $row[1];
 $firstName = $row[3];
+$lastName = $row[3];
 $query = "SELECT * FROM images WHERE artistID='" . $artistID . "'";
 $image_info_table = mysql_query($query);
 // Call a function defined later in this file, with four arguments
-display_table($artistUserName, $image_info_table, $dbname, $firstName);
+display_table($artistUserName, $image_info_table, $dbname, $firstName, $lastName);
 
 
 // HTML to display the form on this page.
@@ -82,7 +83,7 @@ echo '</pre></form>';
  * @param array $image_info_table a 2D array containing the data about each relevant image.
  * @return null
  */
-function display_table($artistUserName, $image_info_table, $dbname, $firstName)
+function display_table($artistUserName, $image_info_table, $dbname, $firstName, $lastName)
 {
 	echo "<TABLE><CAPTION>Your Results:</CAPTION>";
 	$closed_tr = 0; // flag, used to determine if we are at the end of a row when the loop terminates
@@ -109,7 +110,7 @@ function display_table($artistUserName, $image_info_table, $dbname, $firstName)
 			}
 			$domain = $_SERVER['SERVER_NAME'];
 			echo "<TD><img id='$id_name' src='http://$domain/$artistUserName/$thumb_name' onmouseover=" . '"' . "
-						showDetailedView('$div_id', '$firstName')" . '" />';
+						showDetailedView('$div_id', '$firstName', '$lastName')" . '" />';
 			echo "<div id = '$div_id'></div></TD>";
 			if ($count % 6 == 5)
 			{
